@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Shop!</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    
 
 
 </head>
@@ -13,58 +13,58 @@
     <header class="header-wrapper"> 
     <nav class="container">
         <img src="assets/logo.png" alt="logo" class="logo">
-        <a href="index.html"></a>
+        <a href="#container"></a>
         
-        <div>Home</div>
-        <div>Products</div>
-        <div>Your Cart</div>
+        <div><a href="#home" style="color:#FFF4F4;;">Home</a></div>
+        <div><a href="#catalogue" style="color: #FFF4F4;">Products</a></div>
+        <div><a href="#bottom" style="color: #FFF4F4;">Your Cart</a></div>
         
     </nav>
     <hr>
-    <div class="container2">
+    <div class="container2" id="home">
     <h1 class="headertitle">Welcome and happy shopping!</h1>
     <marquee direction="left">  <h3 class="subtitle">Homemade crochet with the best materials for your daily</h3></marquee>
     </div>
 </header> 
 <main>
+
 <section>
     <nav class="article">
 
-        <div class="article my-slider">
+        <div class="mySlider-container">
+            <div class="mySlider fade">
 
                 <img src="assets/potrait (1).jpg" alt="Gambar 1">
-                <img src="assets/potrait (2).jpg" alt="Gambar 2">
-            
+                
+            </div>
+            <div class="mySlider fade">
+            <img src="assets/potrait (2).jpg" alt="Gambar 2">
+            </div>
         </div>
-          
-      
-    </nav>
-    
+
       <div class="formstyle">
         <h2 class="formstyle-title">Contact Us</h2>
         <h5 class="formstyle-title">We will call you asap!</h5>
 
-    <form action="">
-        <fieldset>
+    <form name="message-form" onsubmit="return validateForm()" id="myForm">
+        <fieldset id="result">
             
             <p>
                 <label>Your Name</label>
-                <br><input type="text" 
-                min="5" max="20" 
+                <br><input type="text"  
                 name="fullname" 
                 placeholder="your full name..." />
             </p>
             <p>
                 <label>Email Address</label>
                 <br>
-                <input type="email" 
-                min="8" max="30" 
+                <input type="email"  
                 name="email" 
                 placeholder="example@gmail.com" />
             </p>
             <p>
                 <label><span>What are you interested in?</span>
-                    <br><select name="field">
+                    <br><select type="select" name="field">
                     <option value="Buying">Buying</option>
                     <option value="Reselling">Reselling</option>
                     <option value="Others">Others</option>
@@ -72,7 +72,7 @@
                 
             </p>
             <p>
-                <input type="submit" name="submit" value="submit" />
+                <input type="submit" name="submit" value="submit" onclick="submitform(event)"/>
             </p>
             </fieldset>
     </form>
@@ -93,7 +93,7 @@
 
 <section>
     <nav class="article">
-        <div class="product">
+        <div class="product" id="catalogue">
     <h3>Lorem ipsum dolor sit amet. Aut dolor eaque aut ipsam molestiae qui laudantium perspiciatis id consequatur adipisci non iure quam hic error omnis?
     </h3></div>
     </nav>
@@ -191,16 +191,28 @@
 </div></div></div></nav>
 </section>
 <hr>
+<script src="js/script.js"></script>
 </main>
 
-<footer>
-<ul class="article ul">
-    <li class="li"><a href="contact.html">Kontak</a></li>
-    <li class="li"><a href="about.html">Mengenai</a></li>
-    <li class="li"><a href="copyright.html">Copyright</a></li>
-    <li class="li"><a href="privacy.html">Privacy Policy</a></li>
-    <li class="li"><a href="sitemap.xml">Sitemap</a></li>
-    </ul>
-    </footer>
+    <footer class="callUs" id="bottom">
+        <hr>
+        <div class="closingText">
+            <div class="closingArgu">
+                <h1>Your Closing Argument Headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique.</p>
+            </div>
+            <a href="#container2" class="call">CALL TO ACTION</a>
+        </div>
+        <hr>
+        <div class="footNote">
+            <img src="assets/logo.png">
+            <ul>
+                <li>Privacy Policy</li>
+            </ul>
+            <p>© 2023 semoga lolos</p>
+        </div>
+</footer> 
+
+    
 </body>
 </html>
