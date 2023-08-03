@@ -103,7 +103,6 @@ margin-left: 10%;
   width: 450px;
   height: 650px;
 }
-
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -357,6 +356,12 @@ footer {
   }
   .article{
       align-items: center;
+  }
+ 
+  .mySlider img{
+    max-width: 450px;
+    height: auto;
+    margin-left: 2%;
   }
   .middlepage{
       align-items: center;
