@@ -230,13 +230,18 @@ margin-left: 200px;
 }
 .listproduct{
   flex-basis: 70%;
-  word-break: break-all;
+ 
   color: #F7E6C4;
-  font-family: tahoma;
-  justify-content: center;
-  font-size: 15pt;
+ 
   padding-top: 20px;
   padding-bottom: 5px;
+}
+.listproduct > div {
+  word-wrap: break-word;
+  width: 50px;
+  font-family: tahoma;
+  justify-content: center;
+  font-size: 18pt;
 }
 .middlepage {
   color: #F7E6C4;
