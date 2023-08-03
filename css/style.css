@@ -88,8 +88,8 @@ F1C376
 * {box-sizing:border-box}
 
 .mySlider-container { 
-padding: 40px;
-margin-left: 200px;
+padding: 20px 0;
+margin-left: 10%;
   max-width: 200px;
 }
 
@@ -229,10 +229,8 @@ margin-left: 200px;
   justify-content: center;
 }
 .listproduct{
-  flex-basis: 70%;
- 
+  width: 50%;
   color: #F7E6C4;
- 
   padding-top: 20px;
   padding-bottom: 5px;
 }
@@ -242,6 +240,11 @@ margin-left: 200px;
   font-family: tahoma;
   justify-content: center;
   font-size: 18pt;
+}
+.listproduct img{
+  width:90px;
+  height:90px;
+  float: left;
 }
 .middlepage {
   color: #F7E6C4;
